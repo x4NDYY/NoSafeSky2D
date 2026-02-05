@@ -1,0 +1,310 @@
+fileFormatVersion: 2
+guid: 1e65c502dc1f85a40ba985cdf1703f50
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6052519202393987936
+    second: Boom!_0
+  - first:
+      213: 828195720421899301
+    second: Boom!_1
+  - first:
+      213: -5464069752514817655
+    second: Boom!_2
+  - first:
+      213: 608620335020627449
+    second: Boom!_3
+  - first:
+      213: 2941780775325632329
+    second: Boom!_4
+  - first:
+      213: 5634321879547904619
+    second: Boom!_5
+  - first:
+      213: -1379329560324899951
+    second: Boom!_6
+  - first:
+      213: 7391045683644870749
+    second: Boom!_7
+  - first:
+      213: -7098671006423599837
+    second: Boom!_8
+  - first:
+      213: 3996231446770025210
+    second: Boom!_9
+  - first:
+      213: -7641598326773013868
+    second: Boom!_10
+  - first:
+      213: -1786645205141646402
+    second: Boom!_11
+  - first:
+      213: -3189106050082116589
+    second: Boom!_12
+  - first:
+      213: 7814382818164095157
+    second: Boom!_13
+  - first:
+      213: -1606373514986239201
+    second: Boom!_14
+  - first:
+      213: 2735991737759781230
+    second: Boom!_15
+  - first:
+      213: -6441635497583999337
+    second: Boom!_16
+  - first:
+      213: 8398047518360941419
+    second: Boom!_17
+  - first:
+      213: -3392160933572656871
+    second: Boom!_18
+  - first:
+      213: -6240860141134982112
+    second: Boom!_19
+  - first:
+      213: 7703801453213960056
+    second: Boom!_20
+  - first:
+      213: 7594967883535714161
+    second: Boom!_21
+  - first:
+      213: 6034973284196215213
+    second: Boom!_22
+  - first:
+      213: 3392459512605129249
+    second: Boom!_23
+  - first:
+      213: -1841368907693977141
+    second: Boom!_24
+  - first:
+      213: -3856146120903067013
+    second: Boom!_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boom!_0
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 320
+        width: 154
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757f685938cf65d498d6aaeccec3707f
+      internalID: -337053023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boom!_1
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 338
+        width: 208
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b2fa71a5ed7874a88391742a37f405
+      internalID: -1228308378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boom!_2
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 320
+        width: 439
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a527fef7460488a4989f15a317191ec6
+      internalID: 208804730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boom!_3
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 326
+        width: 309
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3c47798c009544e809d8f16dae8973
+      internalID: 1557750811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boom!_4
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 346
+        width: 173
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2dc15a19e85dc4fa2a4675eee9fba5
+      internalID: 1532115645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5ced5415ab8428645acd193ae890a20d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Boom!_0: -337053023
+      Boom!_1: -1228308378
+      Boom!_2: 208804730
+      Boom!_3: 1557750811
+      Boom!_4: 1532115645
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
