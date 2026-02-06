@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     public float maxHealth = 3f;
+    public GameOverUI gameOverUI;
     float currentHealth;
 
     void Awake()
@@ -22,8 +23,8 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("GAME OVER");
-        // тут потом рестарт сцены
+        Debug.Log("DIE CALLED");
+        gameOverUI.Show();
     }
 
     public float GetHealth() => currentHealth;

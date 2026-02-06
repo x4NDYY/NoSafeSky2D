@@ -4,11 +4,16 @@ public class CrosshairFollow : MonoBehaviour
 {
     void Start()
     {
-        Cursor.visible = false; // прячем стандартную стрелку
+        Cursor.visible = false;
     }
 
     void Update()
     {
-        transform.position = Input.mousePosition; // прицел следует за мышью
+        if (GameManager.IsGameOver)
+            return;
+
+        Cursor.visible = false;
+        transform.position = Input.mousePosition;
     }
+
 }

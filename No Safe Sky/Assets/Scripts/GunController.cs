@@ -33,6 +33,9 @@ public class GunController : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.IsGameOver)
+            return;
+
         if (Input.GetKeyDown(KeyCode.R))
         {
             StartCoroutine(Reload());
