@@ -29,6 +29,9 @@ public class DroneMover : MonoBehaviour
             // последняя точка → взрыв и удаление
             if (current >= waypoints.Length)
             {
+                PlayerHealth player = FindObjectOfType<PlayerHealth>();
+                player.TakeDamage(0.5f);
+
                 Explode();
             }
         }
