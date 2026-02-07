@@ -15,15 +15,12 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth -= dmg;
 
-        Debug.Log("HP: " + currentHealth);
-
         if (currentHealth <= 0)
             Die();
     }
 
     void Die()
     {
-        Debug.Log("DIE CALLED");
         gameOverUI.Show();
     }
 
