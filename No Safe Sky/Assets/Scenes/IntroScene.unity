@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 96152322}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: EndPoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 404984830}
   - component: {fileID: 404984834}
   m_Layer: 0
-  m_Name: "d6ea3a1e-2bbc-4ceb-ac9b-dff7dd162107 \u2014 \u043A\u043E\u043F\u0438\u044F_2"
+  m_Name: Buggy_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -685,7 +685,7 @@ GameObject:
   - component: {fileID: 820211487}
   - component: {fileID: 820211493}
   m_Layer: 0
-  m_Name: "d6ea3a1e-2bbc-4ceb-ac9b-dff7dd162107 \u2014 \u043A\u043E\u043F\u0438\u044F_1"
+  m_Name: Buggy_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1106,7 +1106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1312881506}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: EndPoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1169,7 +1169,7 @@ GameObject:
   - component: {fileID: 1824558884}
   - component: {fileID: 1824558885}
   m_Layer: 0
-  m_Name: StartWaypoint
+  m_Name: BoomPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1423,8 +1423,8 @@ SceneRoots:
   - {fileID: 744113385}
   - {fileID: 371839020}
   - {fileID: 404984833}
-  - {fileID: 96152322}
-  - {fileID: 1312881506}
   - {fileID: 820211490}
+  - {fileID: 1312881506}
+  - {fileID: 96152322}
   - {fileID: 571446132}
   - {fileID: 1824558884}
