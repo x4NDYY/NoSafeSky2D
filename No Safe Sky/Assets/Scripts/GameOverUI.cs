@@ -38,7 +38,5 @@ public class GameOverUI : MonoBehaviour
         Time.timeScale = 1f;
         AudioListener.volume = 1f;
         SceneManager.LoadScene("MenuScene");
-        Cursor.visible = true;
     }
-
 }

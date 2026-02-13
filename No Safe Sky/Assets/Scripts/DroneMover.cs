@@ -31,18 +31,22 @@ public class DroneMover : MonoBehaviour
                 PlayerHealth player = FindObjectOfType<PlayerHealth>();
                 player.TakeDamage(0.5f);
 
-                Explode();
+                Explode(false);
             }
         }
     }
 
-    public void Explode()
+    public void Explode(bool killedByPlayer)
     {
         if (explosionPrefab)
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
 
         CameraShake.instance.Shake(0.12f, 0.18f);
 
+        if (killedByPlayer)
+        {
+            GameManager.Instance.AddKill();
+        }
         Destroy(gameObject);
     }
 }

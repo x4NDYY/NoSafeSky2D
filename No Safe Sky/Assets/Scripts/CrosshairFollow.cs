@@ -12,7 +12,6 @@ public class CrosshairFollow : MonoBehaviour
         if (GameManager.IsGameOver)
             return;
 
-        Cursor.visible = false;
         transform.position = Input.mousePosition;
     }
 

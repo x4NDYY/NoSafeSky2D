@@ -12,6 +12,6 @@ public class ShootHitScan : MonoBehaviour
         Collider2D hit = Physics2D.OverlapPoint(pos, droneLayer);
 
         if (hit != null)
-            hit.GetComponent<DroneMover>()?.Explode();
+            hit.GetComponent<DroneMover>()?.Explode(true);
     }
 }

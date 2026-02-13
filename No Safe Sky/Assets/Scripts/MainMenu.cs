@@ -5,6 +5,10 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
+        Debug.Log(Application.persistentDataPath);
+        GameManager.IsGameOver = false;
+        Cursor.visible = true;
+
         SceneManager.LoadScene("SampleScene");
     }
 
