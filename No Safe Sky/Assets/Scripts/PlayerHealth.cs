@@ -11,18 +11,23 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
     }
 
+    private void Start()
+    {
+        UIManager.Instance.UpdateHealthText(currentHealth);
+    }
+
     public void TakeDamage(float dmg)
     {
         currentHealth -= dmg;
 
         if (currentHealth <= 0)
             Die();
+
+        UIManager.Instance.UpdateHealthText(currentHealth);
     }
 
     void Die()
     {
         gameOverUI.Show();
     }
-
-    public float GetHealth() => currentHealth;
 }

@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class ShopButton : MonoBehaviour
@@ -5,32 +6,57 @@ public class ShopButton : MonoBehaviour
     public int vehicleIndex;
     public int price;
 
-    public void Buy()
+    [SerializeField] private TextMeshProUGUI buttonText;
+
+    public void Start()
     {
-        var data = GameManager.Instance.saveData;
-
-        if (data.money >= price && !data.purchasedVehicles[vehicleIndex])
-        {
-            data.money -= price;
-            data.purchasedVehicles[vehicleIndex] = true;
-            data.selectedVehicleIndex = vehicleIndex;
-
-            SaveSystem.Save(data);
-
-            Debug.Log("Vehicle purchased!");
-        }
-        else
-            Debug.Log("Not enough money or already purchased");
+        UpdateText();
     }
 
-    public void Select(int index)
+    public void OnClick()
     {
-        var data = GameManager.Instance.saveData;
+        var data = SaveSystem.Load();
 
-        if (data.purchasedVehicles[index])
+        if (!data.purchasedVehicles[vehicleIndex])
         {
-            data.selectedVehicleIndex = index;
-            SaveSystem.Save(data);
+            if(data.money < price)
+            {
+                Debug.Log("Not enough money");
+                return;
+            }
+
+            data.money -= price;
+            data.purchasedVehicles[vehicleIndex] = true;
+        }
+
+        data.selectedVehicleIndex = vehicleIndex;
+        SaveSystem.Save(data);
+        RefreshAllButtons();
+    }
+
+    void RefreshAllButtons()
+    {
+        ShopButton[] buttons = FindObjectsOfType<ShopButton>();
+        foreach (var btn in buttons)
+        {
+            btn.UpdateText();
+        }
+    }
+
+    public void UpdateText()
+    {
+        var data = SaveSystem.Load();
+
+        if (!data.purchasedVehicles[vehicleIndex])
+        {
+            buttonText.text = "$" + price;
+        }
+        else
+        {
+            if (data.selectedVehicleIndex == vehicleIndex)
+                buttonText.text = "Выбрано";
+            else
+                buttonText.text = "Куплено";
         }
     }
 }

@@ -22,7 +22,7 @@ public static class SaveSystem
         SaveData data = new SaveData();
         data.money = 0;
         data.selectedVehicleIndex = 0;
-        data.purchasedVehicles = new bool[2];
+        data.purchasedVehicles = new bool[3];
         data.purchasedVehicles[0] = true;
 
         Save(data);

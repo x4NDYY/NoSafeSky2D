@@ -32,9 +32,8 @@ public class GameManager : MonoBehaviour
 
         saveData.money += 10;
         SaveSystem.Save(saveData);
-
-        UIManager.Instance.UpdateKillText(dronesKilled, dronesToWin);
         UIManager.Instance.UpdateMoneyText(saveData.money);
+        UIManager.Instance.UpdateKillText(dronesKilled, dronesToWin);
 
         if(dronesKilled >= dronesToWin)
         {
