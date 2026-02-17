@@ -1,24 +1,31 @@
 using UnityEngine;
 using System.IO;
-using System.Runtime.InteropServices.WindowsRuntime;
 
 public static class SaveSystem
 {
-    static string path = Application.persistentDataPath + "/save.txt";
+    static string path = Application.persistentDataPath + "/save.json";
 
-    public static void SaveMoney(int money)
+    public static void Save(SaveData data)
     {
-        File.WriteAllText (path, money.ToString());
+        string json = JsonUtility.ToJson(data, true);
+        File.WriteAllText(path, json);
     }
 
-    public static int LoadMoney()
+    public static SaveData Load()
     {
         if (File.Exists(path))
         {
-            string data = File.ReadAllText(path);
-            return int.Parse(data);
+            string json = File.ReadAllText(path);
+            return JsonUtility.FromJson<SaveData>(json);
         }
 
-        return 0;
+        SaveData data = new SaveData();
+        data.money = 0;
+        data.selectedVehicleIndex = 0;
+        data.purchasedVehicles = new bool[2];
+        data.purchasedVehicles[0] = true;
+
+        Save(data);
+        return data;
     }
 }

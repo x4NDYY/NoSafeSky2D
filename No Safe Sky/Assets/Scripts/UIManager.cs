@@ -7,10 +7,30 @@ public class UIManager : MonoBehaviour
 
     public TextMeshProUGUI killText;
     public TextMeshProUGUI moneyText;
+    public TextMeshProUGUI ammoText;
+
+    GunController currentGun;
 
     private void Awake()
     {
         Instance = this;
+    }
+    public void SetGun(GunController gun)
+    {
+        Debug.Log("SetGun called");
+        currentGun = gun;
+    }
+
+    void Update()
+    {
+        Debug.Log("UI Update running");
+
+        if (currentGun != null)
+        {
+            ammoText.text =
+                currentGun.GetCurrentAmmo() + " / " +
+                currentGun.GetReserveAmmo();
+        }
     }
 
     public void UpdateKillText(int current, int max)

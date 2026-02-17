@@ -8,8 +8,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
 
-    public int money = 0;
-    public int rewardPerDrone = 10;
+    public SaveData saveData;
 
     [Header("Win Settings")]
     public int dronesToWin = 100;
@@ -22,8 +21,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        money = SaveSystem.LoadMoney();
-        UIManager.Instance.UpdateMoneyText(money);
+        saveData = SaveSystem.Load();
+        UIManager.Instance.UpdateMoneyText(saveData.money);
         UIManager.Instance.UpdateKillText(dronesKilled, dronesToWin);
     }
 
@@ -31,11 +30,11 @@ public class GameManager : MonoBehaviour
     {
         dronesKilled++;
 
-        money += rewardPerDrone;
-        SaveSystem.SaveMoney(money);
+        saveData.money += 10;
+        SaveSystem.Save(saveData);
 
         UIManager.Instance.UpdateKillText(dronesKilled, dronesToWin);
-        UIManager.Instance.UpdateMoneyText(money);
+        UIManager.Instance.UpdateMoneyText(saveData.money);
 
         if(dronesKilled >= dronesToWin)
         {

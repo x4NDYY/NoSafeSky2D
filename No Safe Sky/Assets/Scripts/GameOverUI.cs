@@ -16,9 +16,7 @@ public class GameOverUI : MonoBehaviour
     {
         GameManager.IsGameOver = true;
         AudioListener.volume = 0f;
-
         Cursor.visible = true;
-
         gameObject.SetActive(true);
         Time.timeScale = 0f;
     }

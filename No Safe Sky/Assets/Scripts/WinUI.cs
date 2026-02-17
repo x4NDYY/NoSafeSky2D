@@ -13,9 +13,10 @@ public class WinUI : MonoBehaviour
 
     public void Show()
     {
+        AudioListener.volume = 0;
+        Cursor.visible = true;
         gameObject.SetActive(true);
         Time.timeScale = 0f;
-        Cursor.visible = true;
     }
 
     public void MainMenu()

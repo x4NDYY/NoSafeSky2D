@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 5dca6c62acbce4d43ac5c22dabc6ef57
+guid: c7cbf4d15308ac54cb5d69a2c45b6cec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 489208402918003468
-    second: road_segment_3_0
-  - first:
-      213: 6684607966792836045
-    second: road_segment_3_1
+      213: -4633521740327901473
+    second: f0cb442b-8d5f-4fb6-be00-f608f21eb9e9_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: road_segment_3_0
+      name: f0cb442b-8d5f-4fb6-be00-f608f21eb9e9_0
       rect:
         serializedVersion: 2
-        x: 73
-        y: 441
-        width: 1900
-        height: 14
+        x: 11
+        y: 0
+        width: 1494
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c03501553740ac600800000000000000
-      internalID: 489208402918003468
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: road_segment_3_1
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 59
-        width: 1917
-        height: 348
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dc3ee6b778f74cc50800000000000000
-      internalID: 6684607966792836045
+      spriteID: fd6a4b0d68c62bfb0800000000000000
+      internalID: -4633521740327901473
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -159,9 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      road_segment_3_0: 489208402918003468
-      road_segment_3_1: 6684607966792836045
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
